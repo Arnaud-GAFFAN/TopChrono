@@ -1,0 +1,39 @@
+@font-face {
+  font-family: DM-Sans;
+  src: url(../fonts/static/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+$font1: "DM-Sans", sans-serif;
+$font2: "Poppins", sans-serif;
+$primary: rgb(13, 110, 253);
+$dark: rgb(32, 36, 40);
+$success: rgb(25, 135, 84);
+$info: rgb(13, 202, 240);
+$warning: rgb(253,126,20);
+$danger: rgb(220, 53, 69);
+$secondary: rgb(105, 114, 122);
+$light: rgb(241, 242, 243);
+$color1: #a1a1a8;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $dark;
+  min-height: 100vh;
+  color: $color1;
+  font-family: $font1;
+}
+@mixin flexbox($align, $justify-content) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify-content;
+}
+ul {
+  list-style: none;
+}
