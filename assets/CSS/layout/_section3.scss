@@ -1,0 +1,64 @@
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  gap: 100px;
+  flex-wrap: wrap;
+  grid-template-rows: 650px;
+  width: calc(100% - 300px);
+  margin: auto;
+
+  .image {
+    position: relative;
+    background: url("../img/camionette_carton.webp") center/cover;
+    border-radius: 30px;
+
+    figure {
+      position: absolute;
+      bottom: -5%;
+      right: -5%;
+      z-index: -1;
+      svg {
+        fill: rgba(13, 202, 240, 0.353);
+      }
+    }
+  }
+  .qualities {
+    h2 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    p {
+      color: $danger;
+      margin: 20px 0;
+      font-size: 1.5rem;
+    }
+    ul {
+      li {
+        font-size: 1.2rem;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        span {
+          color: $danger;
+          font-size: 1.1rem;
+          margin-right: 20px;
+        }
+      }
+      & + button {
+        color: $light;
+        background: none;
+        border: none;
+        font-size: 1.1rem;
+        padding: 15px 15px;
+        background: $danger;
+        cursor: pointer;
+        border-radius: 9px;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

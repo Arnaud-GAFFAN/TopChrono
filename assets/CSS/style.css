@@ -390,4 +390,68 @@ header .info div form button:hover {
   height: 70px;
   position: absolute;
   bottom: -40%;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  gap: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-template-rows: 650px;
+  width: calc(100% - 300px);
+  margin: auto;
+}
+.section3 .image {
+  position: relative;
+  background: url("../img/camionette_carton.webp") center/cover;
+  border-radius: 30px;
+}
+.section3 .image figure {
+  position: absolute;
+  bottom: -5%;
+  right: -5%;
+  z-index: -1;
+}
+.section3 .image figure svg {
+  fill: rgba(13, 202, 240, 0.353);
+}
+.section3 .qualities h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.section3 .qualities p {
+  color: rgb(220, 53, 69);
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.section3 .qualities ul li {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section3 .qualities ul li span {
+  color: rgb(220, 53, 69);
+  font-size: 1.1rem;
+  margin-right: 20px;
+}
+.section3 .qualities ul + button {
+  color: rgb(241, 242, 243);
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 15px 15px;
+  background: rgb(220, 53, 69);
+  cursor: pointer;
+  border-radius: 9px;
+}
+.section3 .qualities ul + button i {
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
