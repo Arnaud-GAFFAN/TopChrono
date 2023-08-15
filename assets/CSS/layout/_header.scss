@@ -20,12 +20,14 @@ header {
         transition: 0.4s;
         display: flex;
         font-size: 1.2rem;
+        cursor: pointer;
         &:hover {
           color: $info;
         }
       }
       & + div i {
         color: $warning;
+        cursor: pointer;
       }
     }
   }
@@ -91,6 +93,10 @@ header {
           background: $info;
           color: $light;
           transition: 0.3s;
+          cursor: pointer;
+          i{
+            margin-right: 5px;
+          }
           &:hover {
             background: rgb(11, 89, 105);
           }

@@ -1,0 +1,103 @@
+.session1 {
+  h2 {
+    font-size: 3rem;
+    position: relative;
+    margin: 30px 0;
+    text-align: center;
+    &::before {
+      content: " ";
+      width: 150px;
+      height: 9px;
+      background: $danger;
+      position: absolute;
+      border-radius: 50px;
+      top: 0;
+      left: 50%;
+      margin-top: -9px;
+      transform: translateX(-50%);
+    }
+  }
+  .cards {
+    @include flexbox(center, space-between);
+    flex-wrap: wrap;
+    width: calc(100% - 300px);
+    margin: auto;
+    position: relative;
+    &::after {
+      content: "";
+      background: url("../img/airplane_bw.png")center/cover;
+      width: 100%;
+      height: 90px;
+    }
+    gap: 10px;
+    & > div {
+      width: 380px;
+      background: $black;
+      padding: 15px;
+      border-radius: 12px;
+    }
+    .card-header {
+      height: 250px;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 9px;
+      }
+    }
+    .card-body {
+      height: 250px;
+      .header {
+        height: 100px;
+        position: relative;
+        h3 {
+          font-size: 1.5rem;
+          color: $danger;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-top: 10px;
+        }
+        &::after {
+          content: " ";
+          left: 0;
+          bottom: 0;
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: $color1;
+        }
+      }
+      .main {
+        p {
+          line-height: 25px;
+          font-size: 1.1rem;
+          margin: 15px 0;
+        }
+      }
+    }
+    .card-footer {
+      button {
+        display: flex;
+        height: 35px;
+        width: 50%;
+        background: rgba(220, 53, 70, 0.299);
+        color: $danger;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        justify-content: space-around;
+        cursor: pointer;
+        font-size: rem;
+        transition: 0.3s;
+        span {
+          font-size: 0.8rem;
+        }
+        &:hover {
+          background: $danger;
+          color: $light;
+        }
+      }
+    }
+  }
+}
