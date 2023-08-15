@@ -1,6 +1,7 @@
 header {
   height: 100vh;
   nav {
+    font-family: $font1;
     @include flexbox(center, space-between);
     width: calc(100% - 300px);
     margin: auto;
@@ -57,6 +58,7 @@ header {
       h1 {
         text-transform: uppercase;
         text-align: center;
+        font-family: $font2;
       }
       form {
         width: 100%;

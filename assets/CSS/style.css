@@ -32,6 +32,7 @@ header {
   height: 100vh;
 }
 header nav {
+  font-family: "DM-Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,6 +116,7 @@ header .info div {
 header .info div h1 {
   text-transform: uppercase;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 header .info div form {
   width: 100%;
@@ -170,6 +172,7 @@ header .info div form button:hover {
 }
 
 .session1 h2 {
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   position: relative;
   margin: 30px 0;
@@ -288,6 +291,7 @@ header .info div form button:hover {
   position: relative;
   margin: 30px 0;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .session2 h2::before {
   content: " ";
@@ -341,6 +345,7 @@ header .info div form button:hover {
 .session2 .options > div .description h3 {
   font-weight: 900;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .session2 .options > div .description p {
   text-align: center;
@@ -421,6 +426,7 @@ header .info div form button:hover {
   text-transform: uppercase;
   font-size: 3rem;
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
 }
 .section3 .qualities p {
   color: rgb(220, 53, 69);
@@ -461,6 +467,7 @@ header .info div form button:hover {
   position: relative;
   margin: 150px 0 30px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .section4 h2::before {
   content: " ";
@@ -633,6 +640,7 @@ footer .infos .part-1 .follow-us ul .linkedin:hover {
 footer .infos .part2 h3,
 footer .infos .part-3 h3 {
   font-size: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 footer .infos .part2 ul,
 footer .infos .part-3 ul {
@@ -664,6 +672,7 @@ footer .infos .part-3 ul li:hover {
 }
 footer .infos .part4 h3 {
   font-size: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 footer .infos .part4 ul {
   margin-top: 2rem;
