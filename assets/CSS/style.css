@@ -530,6 +530,7 @@ header .info div form button:hover {
   height: 250px;
   overflow: hidden;
   position: relative;
+  border-radius: 15px;
 }
 .section4 .partners > div img:hover {
   -webkit-transform: scale(1.1);
@@ -540,4 +541,186 @@ header .info div form button:hover {
   height: 100%;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+
+footer {
+  margin-top: 100px;
+  min-height: 300px;
+}
+footer .infos {
+  width: calc(100% - 300px);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "a";
+  margin-bottom: 100px;
+  position: relative;
+}
+footer .infos .part-1 .brand {
+  width: 250px;
+}
+footer .infos .part-1 .brand img {
+  width: 100%;
+}
+footer .infos .part-1 .adress li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 15px 0;
+}
+footer .infos .part-1 .adress li:nth-child(1) {
+  color: rgb(241, 242, 243);
+}
+footer .infos .part-1 .adress li:hover:not(li:nth-child(1):hover) {
+  color: rgb(13, 202, 240);
+}
+footer .infos .part-1 .adress li i {
+  margin-right: 7px;
+}
+footer .infos .part-1 .follow-us p {
+  font-size: 1.3rem;
+  color: rgb(241, 242, 243);
+  margin-top: 17px;
+}
+footer .infos .part-1 .follow-us ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+footer .infos .part-1 .follow-us ul li {
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgb(241, 242, 243);
+  margin-top: 10px;
+}
+footer .infos .part-1 .follow-us ul .facebook {
+  background: rgb(84, 117, 188);
+  border-radius: 7px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .infos .part-1 .follow-us ul .facebook:hover {
+  background: rgb(26, 53, 110);
+}
+footer .infos .part-1 .follow-us ul .twitter {
+  background: rgb(58, 172, 221);
+  border-radius: 7px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .infos .part-1 .follow-us ul .twitter:hover {
+  background: rgb(26, 53, 110);
+}
+footer .infos .part-1 .follow-us ul .linkedin {
+  background: rgb(32, 126, 180);
+  border-radius: 7px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .infos .part-1 .follow-us ul .linkedin:hover {
+  background: rgb(26, 53, 110);
+}
+footer .infos .part2 h3,
+footer .infos .part-3 h3 {
+  font-size: 2rem;
+}
+footer .infos .part2 ul,
+footer .infos .part-3 ul {
+  margin-top: 20px;
+}
+footer .infos .part2 ul li,
+footer .infos .part-3 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 8px 0;
+}
+footer .infos .part2 ul li span,
+footer .infos .part2 ul li i,
+footer .infos .part-3 ul li span,
+footer .infos .part-3 ul li i {
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+}
+footer .infos .part2 ul li:hover,
+footer .infos .part-3 ul li:hover {
+  color: rgb(13, 202, 240);
+}
+footer .infos .part4 h3 {
+  font-size: 2rem;
+}
+footer .infos .part4 ul {
+  margin-top: 2rem;
+}
+footer .infos .part4 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 18px 0;
+}
+footer .infos .part4 ul li:hover {
+  color: rgb(13, 202, 240);
+}
+footer .infos .part4 ul li img {
+  height: 20px;
+  width: 30px;
+  margin-right: 7px;
+}
+footer .infos .part4 > div h4 {
+  color: rgb(241, 242, 243);
+  margin-top: 17px;
+}
+footer .infos .part4 > div p {
+  margin-top: 7px;
+}
+footer .infos::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  background: #a1a1a8;
+  margin-bottom: -50px;
+}
+footer .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 300px);
+  margin: auto;
+  margin-bottom: 50px;
+}
+footer .end p strong {
+  color: rgb(241, 242, 243);
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,159 @@
+footer {
+  margin-top: 100px;
+  min-height: 300px;
+  .infos {
+    width: calc(100% - 300px);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "a";
+    margin-bottom: 100px;
+    position: relative;
+    .part-1 {
+      .brand {
+        width: 250px;
+        img {
+          width: 100%;
+        }
+      }
+      .adress {
+        li {
+          transition: 0.3s;
+          &:nth-child(1) {
+            color: $light;
+          }
+          margin: 15px 0;
+          &:hover:not(li:nth-child(1):hover) {
+            color: $info;
+          }
+          i {
+            margin-right: 7px;
+          }
+        }
+      }
+      .follow-us {
+        p {
+          font-size: 1.3rem;
+          color: $light;
+          margin-top: 17px;
+        }
+        ul {
+          display: flex;
+          gap: 10px;
+          margin-top: 20px;
+
+          li {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $light;
+            margin-top: 10px;
+          }
+          .facebook {
+            background: rgb(84, 117, 188);
+            border-radius: 7px;
+            transition: 0.2s;
+            &:hover {
+              background: rgb(26, 53, 110);
+            }
+          }
+          .twitter {
+            background: rgb(58, 172, 221);
+            border-radius: 7px;
+            transition: 0.2s;
+            &:hover {
+              background: rgb(26, 53, 110);
+            }
+          }
+          .linkedin {
+            background: rgb(32, 126, 180);
+            border-radius: 7px;
+            transition: 0.2s;
+            &:hover {
+              background: rgb(26, 53, 110);
+            }
+          }
+        }
+      }
+    }
+    .part2,
+    .part-3 {
+      h3 {
+        font-size: 2rem;
+      }
+      ul {
+        margin-top: 20px;
+
+        li {
+          display: flex;
+          align-items: flex-start;
+          transition: 0.5s;
+          margin: 8px 0;
+          span,
+          i {
+            width: 30px;
+            height: 30px;
+            margin-right: 9px;
+          }
+          &:hover {
+            color: $info;
+          }
+        }
+      }
+    }
+    .part4 {
+      h3 {
+        font-size: 2rem;
+      }
+      ul {
+        margin-top: 2rem;
+        li {
+          display: flex;
+          align-items: center;
+          transition: 0.5s;
+          user-select: none;
+          margin: 18px 0;
+          &:hover {
+            color: $info;
+          }
+          img {
+            height: 20px;
+            width: 30px;
+            margin-right: 7px;
+          }
+        }
+      }
+      & > div {
+        h4 {
+          color: $light;
+          margin-top: 17px;
+        }
+        p {
+          margin-top: 7px;
+        }
+      }
+    }
+    &::after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      background: $color1;
+      margin-bottom: -50px;
+    }
+  }
+  .end {
+    @include flexbox(center, space-between);
+    width: calc(100% - 300px);
+    margin: auto;
+    margin-bottom: 50px;
+    p {
+      strong {
+        color: $light;
+      }
+    }
+  }
+}
