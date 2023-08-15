@@ -23,6 +23,9 @@ $black: rgb(25,27,29);
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background: $dark;
